@@ -6,7 +6,7 @@ ip_address = input("LHOST: ")
 port = int(input("LPORT: "))
 s.bind((ip_address, port))
 s.listen(5)
-
+print("starting listen ...")
 while True:
     try:
         connexion, address = s.accept()

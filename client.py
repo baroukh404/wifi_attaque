@@ -16,7 +16,7 @@ while True:
         print("code exited ...")
         time.time(3)
     else:
-        client.send(file.encode)
+        client.send(file.encode())
         print("get information finished")
         break
 exit()
