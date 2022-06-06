@@ -3,7 +3,7 @@ import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ip_address = input("LHOST: ")
-port = int(input("LPORT"))
+port = int(input("LPORT: "))
 s.bind((ip_address, port))
 s.listen(5)
 
