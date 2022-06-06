@@ -14,8 +14,10 @@ while True:
         print("Client disconnected, you must try again")
     else:
         print("Client connection on {}".format(ip_address))
-        message = connexion.recv(1024)
+        message = connexion.recv(4096)
         print(message.decode())
+        information = open("wifi.txt", "w")
+        information.write(message.decode())
         break
     finally:
         print("Le scénario est terminé")

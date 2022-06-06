@@ -18,6 +18,7 @@ while True:
     else:
         client.send(file.encode())
         print("get information finished")
+        time.sleep(3)
         break
 exit()
 
